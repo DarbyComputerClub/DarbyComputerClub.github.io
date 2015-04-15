@@ -8,8 +8,22 @@ body {
     font-family: "Ubuntu Mono", Consolas, monospace;
     text-align: center;
     padding: 0.5em;
+}
+
+.head-section {
     border-bottom: 1px solid #999999;
     margin: 0;
+}
+
+#info-links {
+    font-family: "Ubuntu Mono", Consolas, monospace;
+    text-align: right;
+    padding: 0.5em;
+}
+
+#info-links a {
+    text-decoration: none;
+    color: #0000ff;
 }
 
 #container {
