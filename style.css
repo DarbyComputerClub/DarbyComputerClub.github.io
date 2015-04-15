@@ -1,0 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono);
+
+body {
+    background-color: #444444;
+}
+
+#title {
+    font-family: "Ubuntu Mono", Consolas, monospace;
+    text-align: center;
+    padding: 0.5em;
+    border-bottom: 1px solid #999999;
+    margin: 0;
+}
+
+#container {
+    background-color: #eeeeee;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px #000000;
+}
+
+#content {
+    font-family: "Ubuntu";
+    padding: 1.5em 2em;
+    line-height: 150%;
+}
