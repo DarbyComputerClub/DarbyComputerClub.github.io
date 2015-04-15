@@ -8,6 +8,7 @@ body {
     font-family: "Ubuntu Mono", Consolas, monospace;
     text-align: center;
     padding: 0.5em;
+    font-size: 42px;
 }
 
 .head-section {
@@ -18,7 +19,9 @@ body {
 #info-links {
     font-family: "Ubuntu Mono", Consolas, monospace;
     text-align: right;
-    padding: 0.5em;
+    padding: 0.5em 1em;
+    background-color: #f8f8f8;
+    font-size: 16px;
 }
 
 #info-links a {
@@ -33,7 +36,8 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     border-radius: 3px;
-    box-shadow: 0 2px 4px #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
 }
 
 #content {
