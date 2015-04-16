@@ -40,6 +40,13 @@ body {
     font-size: 16px;
 }
 
+.section-heading {
+    font-family: "Ubuntu Mono", Consolas, monospace;
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
 #content {
     font-family: "Ubuntu";
     padding: 1.5em 2em;
