@@ -79,3 +79,7 @@ background-color: #eeeeee;
     padding: 1.5em 2em;
     line-height: 150%;
 }
+
+.clear {
+    clear: both;
+}
