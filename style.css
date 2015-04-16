@@ -10,6 +10,10 @@ body {
     border-radius: 3px;
     width: 128px;
     height: 128px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 #title {
@@ -83,3 +87,5 @@ background-color: #eeeeee;
 .clear {
     clear: both;
 }
+
+
