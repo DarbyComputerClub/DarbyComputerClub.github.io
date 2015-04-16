@@ -11,6 +11,11 @@ body {
     font-size: 42px;
 }
 
+#title a {
+    color: #111111;
+    text-decoration: none;
+}
+
 .head-section {
     border-bottom: 1px solid #999999;
     margin: 0;
@@ -18,15 +23,28 @@ body {
 
 #info-links {
     font-family: "Ubuntu Mono", Consolas, monospace;
-    text-align: right;
     padding: 0.5em 1em;
     background-color: #f8f8f8;
     font-size: 16px;
+    clear: both;
+}
+
+#info-links-left {
+    display: inline-block;
+    float: left;
+}
+
+#info-links-right {
+    text-align: right;
 }
 
 #info-links a {
     text-decoration: none;
     color: #0000ff;
+}
+
+a#current-info-link {
+    color: #009900;
 }
 
 #container {
