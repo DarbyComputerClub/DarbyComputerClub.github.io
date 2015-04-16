@@ -5,6 +5,13 @@ body {
     margin: 16px;
 }
 
+.logo {
+    float: right;
+    border-radius: 3px;
+    width: 128px;
+    height: 128px;
+}
+
 #title {
     font-family: "Ubuntu Mono", Consolas, monospace;
     text-align: center;
@@ -49,7 +56,8 @@ a#current-info-link {
 }
 
 #container {
-    background-color: #eeeeee;
+    
+background-color: #eeeeee;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
