@@ -86,4 +86,7 @@ background-color: #eeeeee;
     clear: both;
 }
 
-
+#disclaimer {
+    font-size: 8pt;
+    line-height: 115%;
+}
