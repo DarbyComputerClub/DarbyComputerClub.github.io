@@ -2,8 +2,8 @@
 
 
 html {
-	min-height: 100%;
-	margin: 0;
+    min-height: 100%;
+    margin: 0;
 }
 
 body {
@@ -11,96 +11,120 @@ body {
 	background:
 		linear-gradient(135deg, rgba(12, 45, 64, 0) 50%, rgba(12, 45, 64, 1)),
 		linear-gradient(45deg, rgba(12, 45, 64, 1), rgba(12, 45, 64, 0) 50%),
-		url(/images/smudges.png),
-		linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 600px,
-			rgba(25, 52, 67, 0.8) 600px, rgba(25, 52, 67, 0.8) 100%),
+		url(/images/smudges2.png),
+		linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 800px,
+			rgba(25, 52, 67, 0.8) 800px, rgba(25, 52, 67, 0.8) 100%),
 		url(/images/digits.png),
 		linear-gradient(to bottom, #367193, #12435e);
 	background-repeat: no-repeat, no-repeat, repeat-x, no-repeat, repeat, no-repeat;
+	background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
 	min-height: 100%;
 }
 
-.logo {
+.header {
+    background-color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: left;
+    border-bottom:2px solid #222;
+    font-family: "Ubuntu Mono", Consolas, monospace;
+}
+
+#header-container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-left {
+    font-size: 42px;
+    align: left;
+    display: inline-block
+}
+
+#header-right {
     float: right;
-    border-radius: 3px;
-    width: 128px;
-    height: 128px;
-    margin: 10px;
+    text-align:right;
+    color: #FFF;
+    font-size: 14px;
+    margin-top: 24px;
 }
 
 #title {
-    font-family: "Ubuntu Mono", Consolas, monospace;
-    text-align: center;
-    padding: 0.5em;
-    font-size: 42px;
-}
-
-#title a {
-    color: #111111;
     text-decoration: none;
-}
-
-.head-section {
-    border-bottom: 1px solid #999999;
-    margin: 0;
-}
-
-#info-links {
-    font-family: "Ubuntu Mono", Consolas, monospace;
-    padding: 0.5em 1em;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    clear: both;
-}
-
-#info-links-left {
-    display: inline-block;
-    float: left;
-}
-
-#info-links-right {
-    float: right;
-    text-align: right;
-}
-
-#info-links a {
-    text-decoration: none;
-    color: #0000ff;
-}
-
-a#current-info-link {
-    color: #009900;
-}
-
-#centered {
-    width: 100%;
-    max-width: 800px;
-    margin: 16px auto;
+    color: #609ec1;
 }
 
 #container {
-    background-color: #eeeeee;
-    box-sizing: border-box;
-    border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 16px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section-heading {
-    font-family: "Ubuntu Mono", Consolas, monospace;
-    font-weight: normal;
-    font-size: 28px;
-    border-bottom: 1px solid #cccccc;
+#box-styling {
+    background-color: #eeeeee;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    font-size: 16px;
+    padding: 0px 0px 20px 0px;	
 }
 
 #content {
     font-family: "Ubuntu";
-    padding: 1.5em 2em;
+    padding: 1em 2em 1.5em;
     line-height: 150%;
 }
 
-.clear {
+.logo {
+    float: right;
+    border-radius: 8px;
+    width: 128px;
+    height: 128px;
+    margin: 1em;
+}
+
+#info-links {
+    font-family: "Ubuntu Mono", Consolas, monospace;
+    background-color: #999;
+    font-size: 16px;
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+a#current-info-link {
+    /*color: #009900;*/
+}
+
+#button {
+    background-color: #999;
+    padding: 0.5em 1em;
+    border-right: 2px solid #aaa;
+    color: #fff;
+}
+
+#button:hover {
+    background-color:#777;
+}
+
+#white-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#blue-link {
+    text-decoration: none;
+    color: #609ec1;
+}
+
+#clear {
     clear: both;
+}
+
+#font {
+    font-family: "Ubuntu Mono", Consolas, monospace;
 }
 
 #disclaimer {
