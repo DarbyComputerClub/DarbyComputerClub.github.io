@@ -1,5 +1,6 @@
-@import url(//fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono);
 @charset "utf-8";
+@import url(//fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono);
+
 
 html {
     min-height: 100%;
@@ -39,7 +40,6 @@ body {
 
 #header-left {
     font-size: 42px;
-    align: left;
     display: inline-block
 }
 
