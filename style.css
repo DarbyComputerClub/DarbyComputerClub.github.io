@@ -98,23 +98,23 @@ a#current-info-link {
     /*color: #009900;*/
 }
 
-#button {
+.button {
     background-color: #999;
     padding: 0.5em 1em;
     border-right: 2px solid #aaa;
     color: #fff;
 }
 
-#button:hover {
+.button:hover {
     background-color:#777;
 }
 
-#white-link {
+.white-link {
     color: #fff;
     text-decoration: none;
 }
 
-#blue-link {
+.blue-link {
     text-decoration: none;
     color: #609ec1;
 }
