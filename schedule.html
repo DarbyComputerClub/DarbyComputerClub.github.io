@@ -38,7 +38,7 @@
               <iframe id='embeded-cal' src='https://www.google.com/calendar/embed?wkst=1&bgcolor=%23FFFFFF&src=57qbon7o72r73of3r4bl5jh8og%40group.calendar.google.com&color=%23125A12&ctz=America%2FNew_York' style=' border-width:0 ' frameborder='0' scrolling='no'></iframe>
             </div>
             <script> 
-              if (screen.width <= 480) {
+              if (screen.width < 320) {
               	document.getElementById("embeded-cal").src = document.getElementById("embeded-cal").src + "&mode=AGENDA"
               } else{
               	document.getElementById("embeded-cal").src = document.getElementById("embeded-cal").src + "&mode=MONTH"
