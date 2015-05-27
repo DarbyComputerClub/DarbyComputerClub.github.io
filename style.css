@@ -134,3 +134,11 @@ a#current-info-link {
     text-shadow: 0 1px 2px black;
     font-family: "Ubuntu", sans-serif;
 }
+
+a#disclaimer {
+    font-size: 8pt;
+    line-height: 115%;
+    color: white;
+    text-shadow: 0 1px 2px black;
+    font-family: "Ubuntu", sans-serif;
+}
