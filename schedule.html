@@ -31,22 +31,40 @@
           <h3 class="section-heading">Schedule</h3>
           <div id="cal">
             <style scoped>
-              .embed-container { position: relative; padding-bottom: 56.25%; height: 320px; overflow: hidden; max-width: 100%; } 
-              .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-width:0; frameborder=0; scrolling=yes}
+              @media (max-width: 550px) {
+                  .big-container {
+                      display: none;
+                  }
+              }
+              @media (min-width: 550px) {
+                  .small-container {
+                      display: none;
+                  }
+              }
+              /* Responsive iFrame */
+              .responsive-iframe-container {
+                  position: relative;
+                  padding-bottom: 56.25%;
+                  padding-top: 30px;
+                  height: 0;
+                  overflow: hidden;
+              }
+              .responsive-iframe-container iframe,   
+              .vresponsive-iframe-container object,  
+              .vresponsive-iframe-container embed {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+              }
             </style>
-            <div class='embed-container'>
-              <iframe id='embeded-cal' src='https://www.google.com/calendar/embed?wkst=1&amp;bgcolor=%23FFFFFF&amp;src=57qbon7o72r73of3r4bl5jh8og%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York'></iframe>
+            <div class='responsive-iframe-container big-container'>
+              <iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=57qbon7o72r73of3r4bl5jh8og%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="550" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
-            <script> 
-              if (screen.width < 320) {
-              	document.getElementById("embeded-cal").src = document.getElementById("embeded-cal").src + "&amp;mode=AGENDA"
-              } else{
-              	document.getElementById("embeded-cal").src = document.getElementById("embeded-cal").src + "&amp;mode=MONTH"
-              };
-            </script>
-            <noscript>
-              Welp!  We are sorry, but your browser does not support javascript, or you have turned it off... 
-            </noscript>
+            <div class='responsive-iframe-container small-container'>
+              <iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=57qbon7o72r73of3r4bl5jh8og%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="550" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
           </div>
         </div>
       </div>
