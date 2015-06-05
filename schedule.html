@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <link rel="StyleSheet" type="text/css" href="/style.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <title>Home - Darby Computer Club</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <style>
       @media (max-width: 550px) {
         .big-container {
@@ -26,14 +26,19 @@
         height: 0;
         overflow: hidden;
       }
-      .responsive-iframe-container iframe,   
-      .vresponsive-iframe-container object,  
+      .responsive-iframe-container iframe,
+      .vresponsive-iframe-container object,
       .vresponsive-iframe-container embed {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+      }
+
+      #cal-embed {
+        border: 0px;
+        overflow: hidden;
       }
     </style>
   </head>
@@ -61,10 +66,10 @@
           <h3 class="section-heading">Schedule</h3>
           <div id="cal">
             <div class='responsive-iframe-container big-container'>
-              <iframe src="https://www.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=57qbon7o72r73of3r4bl5jh8og%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="550" height="600" frameborder="0" scrolling="no"></iframe>
+              <iframe class="cal-embed" src="https://www.google.com/calendar/embed?showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=57qbon7o72r73of3r4bl5jh8og%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="550" height="600" ></iframe>
             </div>
             <div class='responsive-iframe-container small-container'>
-              <iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=57qbon7o72r73of3r4bl5jh8og%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="550" height="600" frameborder="0" scrolling="no"></iframe>
+              <iframe class="cal-embed" src="https://www.google.com/calendar/embed?showNav=0&amp;showDate=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=57qbon7o72r73of3r4bl5jh8og%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style=" border-width:0 " width="550" height="600"></iframe>
             </div>
           </div>
         </div>
