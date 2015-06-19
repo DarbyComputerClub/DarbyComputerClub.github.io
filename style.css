@@ -18,7 +18,7 @@ body {
 	url(/images/digits.png),
 	linear-gradient(to bottom, #367193, #12435e);
     background-repeat: no-repeat, no-repeat, repeat-x, no-repeat, repeat, no-repeat;
-    background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+    background-position: 0 0, 0 0, 0 40px, 0 40px, 0 0px, 0 0px;
     min-height: 100%;
 }
 
@@ -53,7 +53,7 @@ body {
 
 #title {
     text-decoration: none;
-    color: #609ec1;
+    color: #66A7CC;
 }
 
 #container {
@@ -64,18 +64,18 @@ body {
 }
 
 #box-styling {
-    background-color: #eeeeee;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
     font-size: 16px;
-    padding: 0px 0px 20px 0px;	
 }
 
 #content {
+    background-color: #eee;
     font-family: "Ubuntu";
-    padding: 1em 2em 1.5em;
+    padding: 1em 2em 2em;
     line-height: 150%;
+    
 }
 
 .logo {
@@ -88,10 +88,9 @@ body {
 
 #info-links {
     font-family: "Ubuntu Mono", Consolas, monospace;
-    background-color: #999;
-    font-size: 16px;
+    background-color: #fefefe;
+    font-size: 20px;
     padding: 0.5em 0;
-    margin: 0;
 }
 
 a#current-info-link {
@@ -99,24 +98,22 @@ a#current-info-link {
 }
 
 .button {
-    background-color: #999;
-    padding: 0.5em 1em;
-    border-right: 2px solid #aaa;
-    color: #fff;
+    padding: 0.5em 0.5em;
+    border-right: 0px solid #ddd;
 }
 
 .button:hover {
-    background-color:#777;
+    background-color:#ddd;
 }
 
-.white-link {
-    color: #fff;
+.blue-link2 {
+    color: #66A7CC;
     text-decoration: none;
 }
 
 .blue-link {
     text-decoration: none;
-    color: #609ec1;
+    color: #66A7CC;
 }
 
 .clear {
@@ -131,10 +128,48 @@ a#current-info-link {
     font-size: 8pt;
     line-height: 115%;
     color: white;
-    text-shadow: 0 1px 2px black;
+    text-shadow: 0 1px 2px white;
     font-family: "Ubuntu", sans-serif;
 }
 
 #disclaimer-link {
     color: white;
+}
+
+#box-styling2 {
+    background-color: #041E29;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #073143;
+}
+
+#box-styling3 {
+    background-color: #062938;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 0px 0px 0px 0px;	
+}
+
+#info-links-left {
+    color: #ddd;
+    padding-left: 1em;
+}
+
+#blue-bar {
+    background-color: #66A7CC;
+    height: 15px;
+}
+
+#disclaimer-top {
+    padding: 1em 1em 1em 1em;
+    margin-top: 20px;
+}
+
+#disclaimer-bot {
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 40px;
+}
+
+.buffer {
+    margin-top: 20px;
 }
