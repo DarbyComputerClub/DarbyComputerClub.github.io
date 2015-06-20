@@ -173,3 +173,7 @@ a#current-info-link {
 .buffer {
     margin-top: 20px;
 }
+
+#subtitle {
+    font-size: 20px;
+}
