@@ -175,5 +175,6 @@ a#current-info-link {
 }
 
 #subtitle {
-    font-size: 20px;
+    font-size: 36px;
+    margin-top: 12px;
 }
