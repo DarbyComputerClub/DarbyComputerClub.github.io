@@ -1,4 +1,9 @@
 {% include head.html %}
+  <i>
+      <i class="fa fa-calendar"></i>
+      {{ page.date | date: "%A, %B %d, %Y" }}
+  </i>
+  <hr>
   <nav>
     {% if page.previous.url %}
         <div class="nav-link-right">
@@ -28,7 +33,11 @@
     {% endif %}
   </nav>
 
+  <hr>
+
   {{ content }}
+
+  <hr>
 
   <nav>
     {% if page.previous.url %}
