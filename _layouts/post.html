@@ -6,32 +6,33 @@
   <hr>
   <nav>
     {% if page.previous.url %}
-        <div class="nav-link-right">
+        <div class="nav-link-left">
           <a href="{{ page.previous.url }}">
             <i class="fa fa-arrow-left"></i>
             Previous - [{{ page.previous.date | date: "%A, %B %d, %Y" }}: {{ page.previous.title }}]
           </a>
         </div>
     {% else %}
-      <div class="nav-link-right">
+      <div class="nav-link-left">
         <i class="fa fa-arrow-left"></i>
         Previous
       </div>
     {% endif %}
     {% if page.next.url %}
-      <div class="nav-link-left">
+      <div class="nav-link-right">
         <a href="{{ page.next.url }}">
           Next - [{{ page.next.date | date: "%A, %B %d, %Y" }}: {{ page.next.title }}]
           <i class="fa fa-arrow-right"></i>
         </a>
       </div>
     {% else %}
-      <div class="nav-link-left">
+      <div class="nav-link-right">
         Next
         <i class="fa fa-arrow-right"></i>
       </div>
     {% endif %}
   </nav>
+  <div class="clear"></div>
 
   <hr>
 
@@ -41,30 +42,31 @@
 
   <nav>
     {% if page.previous.url %}
-        <div class="nav-link-right">
+        <div class="nav-link-left">
           <a href="{{ page.previous.url }}">
             <i class="fa fa-arrow-left"></i>
             Previous - [{{ page.previous.date | date: "%A, %B %d, %Y" }}: {{ page.previous.title }}]
           </a>
         </div>
     {% else %}
-      <div class="nav-link-right">
+      <div class="nav-link-left">
         <i class="fa fa-arrow-left"></i>
         Previous
       </div>
     {% endif %}
     {% if page.next.url %}
-      <div class="nav-link-left">
+      <div class="nav-link-right">
         <a href="{{ page.next.url }}">
           Next - [{{ page.next.date | date: "%A, %B %d, %Y" }}: {{ page.next.title }}]
           <i class="fa fa-arrow-right"></i>
         </a>
       </div>
     {% else %}
-      <div class="nav-link-left">
+      <div class="nav-link-right">
         Next
         <i class="fa fa-arrow-right"></i>
       </div>
     {% endif %}
   </nav>
+  <div class="clear"></div>
 {% include footer.html %}
