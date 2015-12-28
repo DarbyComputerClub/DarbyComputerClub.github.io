@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+
+    {% feed_meta %}
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@enzanki_ars">
+    <meta name="twitter:creator" content="@enzanki_ars">
+    {% if page.title %}
+      <meta name="twitter:title" content="{{ page.title }}">
+    {% else %}
+      <meta name="twitter:title" content="{{ site.title }}">
+    {% endif %}
+    {% if page.url %}
+      <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
+    {% if page.description %}
+      <meta name="twitter:description" content="{{ page.description }}">
+    {% else %}
+      <meta name="twitter:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image }}">
+    {% else %}
+      <meta name="twitter:image" content="{{ site.url }}/img/profile.jpeg">
+    {% endif %}
+
+    <link rel="StyleSheet" type="text/css" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <title>{{ page.title }}</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-3dkvEK0WLHRJ7/Csr0BZjAWxERc5WH7bdeUya2aXxdU= sha512-+L4yy6FRcDGbXJ9mPG8MT/3UCDzwR9gPeyFNMCtInsol++5m3bk2bXWKdZjvybmohrAsn3Ua5x8gfLnbE1YkOg==" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NFKMQ2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NFKMQ2');</script>
+    <!-- End Google Tag Manager -->
+    <div class="header">
+      <div id="header-container">
+        <span id="header-left">
+          <a href="/" id="title">Darby Computer Club</a>
+        </span>
+        <span id="header-right">
+          Visit us on: <a href="https://twitter.com/@DarbyCompClub" class="blue-link">twitter</a> | <a href="https://darbycomputerclub.slack.com" class="blue-link">slack</a> | <a href="https://github.com/DarbyComputerClub/" class="blue-link">github</a>
+        </span>
+        <div class="clear"></div>
+      </div>
+    </div>
+      <div id = "blue-bar"></div>
+      <nav id="info-links">
+        <div id="container">
+          <div id="info-links-left">
+            <span class="button"><a href="/" class="blue-link2">Home</a></span> | <span class="button"><a href="/schedule.html" class="blue-link2">Schedule</a></span> | <span class="button"><a href="/news.html" class="blue-link2">News</a></span> | <span class="button"><a href="/projects.html" class="blue-link2">Projects</a></span>
+          </div>
+          <div class="clear"></div>
+          </div>
+      </nav>
+    <div id="container" class="buffer">
+      <div id="box-styling">
+        <div id="content">
+          {% if page.title %}
+          <div id="subtitle"><b>{{ page.title }}</b></div>
+          {% endif %}

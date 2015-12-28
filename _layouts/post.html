@@ -1,0 +1,65 @@
+{% include head.html %}
+  <nav>
+      <ul class="pager">
+          {% if page.previous.url %}
+            <a href="{{ page.previous.url }}">
+              <div class="nav-links">
+                <i class="fa fa-arrow-left"></i>
+                Previous - [{{ page.previous.date | date: "%A, %B %d, %Y" }}: {{ page.previous.title }}]
+              </div>
+            </a>
+          {% else %}
+            <div class="nav-links">
+              <i class="fa fa-arrow-left"></i>
+              Previous
+            </div>
+          {% endif %}
+          {% if page.next.url %}
+            <a href="{{ page.next.url }}">
+              <div class="nav-links">
+                Next - [{{ page.next.date | date: "%A, %B %d, %Y" }}: {{ page.next.title }}]
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </a>
+          {% else %}
+            <div class="nav-links">
+              Next
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          {% endif %}
+      </ul>
+  </nav>
+
+  {{ content }}
+
+  <nav>
+      <ul class="pager">
+          {% if page.previous.url %}
+            <a href="{{ page.previous.url }}">
+              <div class="nav-links">
+                <i class="fa fa-arrow-left"></i>
+                Previous - [{{ page.previous.date | date: "%A, %B %d, %Y" }}: {{ page.previous.title }}]
+              </div>
+            </a>
+          {% else %}
+            <div class="nav-links">
+              <i class="fa fa-arrow-left"></i>
+              Previous
+            </div>
+          {% endif %}
+          {% if page.next.url %}
+            <a href="{{ page.next.url }}">
+              <div class="nav-links">
+                Next - [{{ page.next.date | date: "%A, %B %d, %Y" }}: {{ page.next.title }}]
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </a>
+          {% else %}
+            <div class="nav-links">
+              Next
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          {% endif %}
+      </ul>
+  </nav>
+{% include footer.html %}
