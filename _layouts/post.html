@@ -1,65 +1,61 @@
 {% include head.html %}
   <nav>
-      <ul class="pager">
-          {% if page.previous.url %}
-            <a href="{{ page.previous.url }}">
-              <div class="nav-links">
-                <i class="fa fa-arrow-left"></i>
-                Previous - [{{ page.previous.date | date: "%A, %B %d, %Y" }}: {{ page.previous.title }}]
-              </div>
-            </a>
-          {% else %}
-            <div class="nav-links">
-              <i class="fa fa-arrow-left"></i>
-              Previous
-            </div>
-          {% endif %}
-          {% if page.next.url %}
-            <a href="{{ page.next.url }}">
-              <div class="nav-links">
-                Next - [{{ page.next.date | date: "%A, %B %d, %Y" }}: {{ page.next.title }}]
-                <i class="fa fa-arrow-right"></i>
-              </div>
-            </a>
-          {% else %}
-            <div class="nav-links">
-              Next
-              <i class="fa fa-arrow-right"></i>
-            </div>
-          {% endif %}
-      </ul>
+    {% if page.previous.url %}
+        <div class="nav-link-right">
+          <a href="{{ page.previous.url }}">
+            <i class="fa fa-arrow-left"></i>
+            Previous - [{{ page.previous.date | date: "%A, %B %d, %Y" }}: {{ page.previous.title }}]
+          </a>
+        </div>
+    {% else %}
+      <div class="nav-link-right">
+        <i class="fa fa-arrow-left"></i>
+        Previous
+      </div>
+    {% endif %}
+    {% if page.next.url %}
+      <div class="nav-link-left">
+        <a href="{{ page.next.url }}">
+          Next - [{{ page.next.date | date: "%A, %B %d, %Y" }}: {{ page.next.title }}]
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+    {% else %}
+      <div class="nav-link-left">
+        Next
+        <i class="fa fa-arrow-right"></i>
+      </div>
+    {% endif %}
   </nav>
 
   {{ content }}
 
   <nav>
-      <ul class="pager">
-          {% if page.previous.url %}
-            <a href="{{ page.previous.url }}">
-              <div class="nav-links">
-                <i class="fa fa-arrow-left"></i>
-                Previous - [{{ page.previous.date | date: "%A, %B %d, %Y" }}: {{ page.previous.title }}]
-              </div>
-            </a>
-          {% else %}
-            <div class="nav-links">
-              <i class="fa fa-arrow-left"></i>
-              Previous
-            </div>
-          {% endif %}
-          {% if page.next.url %}
-            <a href="{{ page.next.url }}">
-              <div class="nav-links">
-                Next - [{{ page.next.date | date: "%A, %B %d, %Y" }}: {{ page.next.title }}]
-                <i class="fa fa-arrow-right"></i>
-              </div>
-            </a>
-          {% else %}
-            <div class="nav-links">
-              Next
-              <i class="fa fa-arrow-right"></i>
-            </div>
-          {% endif %}
-      </ul>
+    {% if page.previous.url %}
+        <div class="nav-link-right">
+          <a href="{{ page.previous.url }}">
+            <i class="fa fa-arrow-left"></i>
+            Previous - [{{ page.previous.date | date: "%A, %B %d, %Y" }}: {{ page.previous.title }}]
+          </a>
+        </div>
+    {% else %}
+      <div class="nav-link-right">
+        <i class="fa fa-arrow-left"></i>
+        Previous
+      </div>
+    {% endif %}
+    {% if page.next.url %}
+      <div class="nav-link-left">
+        <a href="{{ page.next.url }}">
+          Next - [{{ page.next.date | date: "%A, %B %d, %Y" }}: {{ page.next.title }}]
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+    {% else %}
+      <div class="nav-link-left">
+        Next
+        <i class="fa fa-arrow-right"></i>
+      </div>
+    {% endif %}
   </nav>
 {% include footer.html %}
