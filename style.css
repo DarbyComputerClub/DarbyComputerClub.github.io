@@ -70,12 +70,18 @@ body {
     font-size: 16px;
 }
 
+.nav-links {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    font-size: 16px;
+}
+
 #content {
     background-color: #eee;
     font-family: "Ubuntu";
     padding: 1em 2em 2em;
     line-height: 150%;
-    
+
 }
 
 .logo {
@@ -147,7 +153,7 @@ a#current-info-link {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    padding: 0px 0px 0px 0px;	
+    padding: 0px 0px 0px 0px;
 }
 
 #info-links-left {

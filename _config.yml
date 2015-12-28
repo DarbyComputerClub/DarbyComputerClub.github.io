@@ -1,0 +1,8 @@
+title: "Darby Computer Club"
+description: "The Official Darby Computer Club Website"
+url: "https://DarbyComputerClub.github.io"
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
