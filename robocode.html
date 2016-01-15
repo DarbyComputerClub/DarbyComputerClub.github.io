@@ -2,11 +2,11 @@
 layout: default
 title: Robocode Leaderboard
 battles:
-  - melee/darby
-  - melee/withsample
-  - enz_v_jac
-  - enz_v_wall
-  - jac_v_wall
+  - name: melee/darby
+  - name: melee/withsample
+  - name: enz_v_jac
+  - name: enz_v_wall
+  - name: jac_v_wall
 ---
 
 You can look at the code for our robots and view replays of the battle <a href="https://github.com/DarbyComputerClub/darbyrobocode/">at the GitHub repository</a>.
@@ -14,6 +14,6 @@ You can look at the code for our robots and view replays of the battle <a href="
 <br>
 
 {% for battle in battles %}
-<img src="https://darbycomputerclub.github.io/darbyrobocode/results/{{battle}}graphic.svg" style="width:auto; height:auto; max-width:100%">
+<img src="https://darbycomputerclub.github.io/darbyrobocode/results/{{battle.name}}graphic.svg" style="width:auto; height:auto; max-width:100%">
 {% endfor %}
 
